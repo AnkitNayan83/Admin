@@ -1,0 +1,54 @@
+.smallWidgets {
+  flex: 1;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.smallWidgets-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.smallWidgets-list {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.widgetsmall__title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.smallWidgets-list-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.smallWidgets-username {
+  font-weight: 700;
+}
+.smallWidgets-user {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+}
+
+.smallWidgets-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.smallWidgets-button-icon {
+  margin-right: 5px;
+}
