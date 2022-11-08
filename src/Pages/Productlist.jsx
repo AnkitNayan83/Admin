@@ -1,16 +1,24 @@
 import { DeleteOutline } from "@mui/icons-material";
 import { DataGrid } from "@mui/x-data-grid";
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { productRows } from "../components/demo";
+import { deleteMovie, getMovies } from "../Context/MovieContext/apiCalls";
+import { MovieContext } from "../context/movieContext/MovieContext";
 import "./Productlist.css";
 
 export const Productlist = () => {
   const [data, setData] = useState(productRows);
 
+  const { movies, dispatch } = useContext(MovieContext);
+
+  useEffect(() => {
+    getMovies(dispatch);
+  }, [dispatch]);
+
   const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+    deleteMovie(id, dispatch);
   };
   const columns = [
     { field: "id", headerName: "ID", width: 90 },

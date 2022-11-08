@@ -7,6 +7,7 @@ import {
   Home,
   MailOutline,
   PermIdentity,
+  PlayArrowOutlined,
   Report,
   Storefront,
   Timeline,
@@ -55,15 +56,12 @@ export const Sidebar = () => {
               <span>Users</span>
             </div>
           </Link>
-          <Link
-            to="/products"
-            style={{ textDecoration: "none", color: "black" }}
-          >
+          <Link to="/movies" style={{ textDecoration: "none", color: "black" }}>
             <div className="sidebarComponent__option">
               <span className="sidebar__icons">
-                <Storefront />
+                <PlayArrowOutlined />
               </span>
-              <span>Products</span>
+              <span>Movies</span>
             </div>
           </Link>
           <div className="sidebarComponent__option">
